@@ -4,11 +4,10 @@ import { HeroComponent } from '../hero/hero.component';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [HeroComponent, RouterLink, AnimateOnScrollDirective],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [HeroComponent, RouterLink, AnimateOnScrollDirective],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
 

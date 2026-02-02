@@ -4,11 +4,10 @@ import { RouterLink, RouterLinkActive, Router, NavigationEnd } from '@angular/ro
 import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+    selector: 'app-header',
+    imports: [CommonModule, RouterLink, RouterLinkActive],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
   isScrolled = false;

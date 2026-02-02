@@ -2,11 +2,10 @@ import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 @Component({
-  selector: 'app-hero',
-  standalone: true,
-  imports: [AnimateOnScrollDirective],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+    selector: 'app-hero',
+    imports: [AnimateOnScrollDirective],
+    templateUrl: './hero.component.html',
+    styleUrl: './hero.component.css'
 })
 export class HeroComponent implements AfterViewInit {
   @ViewChild('heroVideo') videoElement!: ElementRef<HTMLVideoElement>;
