@@ -1,0 +1,522 @@
+/* ============================================
+   SERVICES PAGE STYLES
+   Complete Redesign - Premium Wedding DJ
+   ============================================ */
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+.services-intro {
+    padding: 120px 0;
+    background: white;
+    text-align: center;
+}
+
+.services-intro-content {
+    margin-bottom: 80px;
+}
+
+.display-title {
+    font-size: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-feature {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro-feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(253, 162, 7, 0.1), rgba(253, 162, 7, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--color-accent);
+    transition: all 0.3s ease;
+}
+
+.intro-feature:hover .intro-feature-icon {
+    background: var(--color-accent);
+    color: white;
+    transform: scale(1.1);
+}
+
+.intro-feature h4 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--color-text-main);
+}
+
+.intro-feature p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .intro-features {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .display-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ============================================
+   MAIN SERVICES SECTION
+   ============================================ */
+.main-services {
+    padding: 120px 0;
+}
+
+.services-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 60px;
+}
+
+.service-main-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-main-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.service-main-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.service-main-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--color-accent);
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.service-main-content {
+    padding: 35px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-main-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-text-main);
+}
+
+.service-description {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-benefits {
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+}
+
+.benefit-item svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ============================================
+   PACKS SECTION
+   ============================================ */
+.packs-section {
+    padding: 120px 0;
+    background: white;
+}
+
+.packs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pack-card {
+    background: #fcfcfc;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.pack-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.pack-card.featured {
+    border-color: var(--color-accent);
+    background: white;
+}
+
+.pack-badge {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: var(--color-accent);
+    color: white;
+    padding: 8px 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0 0 8px 8px;
+}
+
+.pack-header {
+    padding: 40px 35px 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pack-label {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pack-header h3 {
+    font-size: 1.75rem;
+    color: var(--color-text-main);
+    margin-bottom: 10px;
+}
+
+.pack-header p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.pack-content {
+    padding: 35px;
+}
+
+.pack-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.pack-features li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    font-size: 0.95rem;
+    color: var(--color-text-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.pack-features li:last-child {
+    border-bottom: none;
+}
+
+.pack-features li svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.pack-btn {
+    width: 100%;
+    text-align: center;
+    padding: 16px 30px;
+}
+
+.btn-gold {
+    background: var(--color-accent);
+    color: white;
+    border: 2px solid var(--color-accent);
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+@media (max-width: 900px) {
+    .packs-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+/* ============================================
+   EXTRAS SECTION
+   ============================================ */
+.extras-section {
+    padding: 120px 0;
+}
+
+.extras-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.extra-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.extra-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent);
+    box-shadow: 0 20px 50px rgba(253, 162, 7, 0.12);
+}
+
+.extra-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--color-text-main);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.3s ease;
+}
+
+.extra-card:hover .extra-icon {
+    background: var(--color-accent);
+    transform: rotate(10deg) scale(1.1);
+}
+
+.extra-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: var(--color-text-main);
+}
+
+.extra-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .extras-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .extras-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+.services-cta-final {
+    position: relative;
+    padding: 150px 0;
+    overflow: hidden;
+}
+
+.services-cta-background {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(19, 33, 50, 0.88), rgba(19, 33, 50, 0.92)),
+        url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.services-cta-final .container {
+    position: relative;
+    z-index: 2;
+}
+
+.services-cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.services-cta-title {
+    font-size: 3.2rem;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.services-cta-subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+.services-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-gold-xl {
+    background: var(--color-accent);
+    color: white;
+    padding: 20px 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-gold-xl:hover {
+    background: transparent;
+    color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(253, 162, 7, 0.3);
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.services-cta-note {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .services-cta-final {
+        padding: 100px 0;
+    }
+
+    .services-cta-background {
+        background-attachment: scroll;
+    }
+
+    .services-cta-title {
+        font-size: 2.2rem;
+    }
+
+    .services-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-gold-xl,
+    .btn-outline-light {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.bg-gold {
+    background-color: var(--color-accent) !important;
+}
